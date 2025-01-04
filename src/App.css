@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Love+Light&display=swap");
+
+.search-bar {
+    @media screen and (max-width: 600px) {
+        display: none;
+    }
+}
+
+.chakra-container.search-bar {
+    @media screen and (max-width: 1600px) {
+        margin: 0;
+    }
+}
+
+.event-details {
+    @media screen and (min-width: 600px) {
+        width: 92%;
+    }
+}
+
+.chakra-alert__content {
+    gap: 0;
+}
