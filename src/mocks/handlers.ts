@@ -461,12 +461,4 @@ export const handlers = [
 
         return HttpResponse.json(events);
     })
-    // http.post("http://localhost:3000/events/:id", (req: any, res: any, ctx: any) => {
-    //     const { id } = req.params;
-    //     const event = req.body.events.find((event: Event) => event.id === Number(id));
-    //     const user_id = 1;
-    //     event.reserved = {
-    //         userId: user_id
-    //     };
-    // })
 ];
