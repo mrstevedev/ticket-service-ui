@@ -15,14 +15,14 @@ async function enableMocking() {
     await worker.start();
 }
 
-enableMocking().then(() => {
-    createRoot(document.getElementById("root")!).render(
-        <ReactQueryProvider>
-            <ReactChakraProvider>
-                <ReactKindeProvider>
-                    <RouterProvider router={router} />
-                </ReactKindeProvider>
-            </ReactChakraProvider>
-        </ReactQueryProvider>
-    );
-});
+// enableMocking().then(() => {
+createRoot(document.getElementById("root")!).render(
+    <ReactQueryProvider>
+        <ReactChakraProvider>
+            <ReactKindeProvider>
+                <RouterProvider router={router} />
+            </ReactKindeProvider>
+        </ReactChakraProvider>
+    </ReactQueryProvider>
+);
+// });
