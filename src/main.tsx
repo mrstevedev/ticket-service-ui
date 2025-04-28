@@ -8,12 +8,12 @@ import { ReactKindeProvider } from "./providers/ReactKindeProvider";
 
 const router = createBrowserRouter(routes);
 
-async function enableMocking() {
-    if (import.meta.env.MODE !== "development") return;
-    const { worker } = await import("@/mocks/browser");
+// async function enableMocking() {
+//     if (import.meta.env.MODE !== "development") return;
+//     const { worker } = await import("@/mocks/browser");
 
-    await worker.start();
-}
+//     await worker.start();
+// }
 
 // enableMocking().then(() => {
 createRoot(document.getElementById("root")!).render(
