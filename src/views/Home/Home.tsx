@@ -20,7 +20,8 @@ export default function Home() {
         enabled: delay,
         queryKey: ["events"],
         initialPageParam: EVENT.LIMIT,
-        queryFn: ({ pageParam }) => handleGetEvents(pageParam),
+        // queryFn: ({ pageParam }) => handleGetEvents(pageParam),
+        queryFn: ({ pageParam }) => handleGetEvents(),
         getNextPageParam: (_lastPage, _allPages, page) => {
             if (updateLimit) return limit;
 
