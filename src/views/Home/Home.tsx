@@ -21,7 +21,7 @@ export default function Home() {
         queryKey: ["events"],
         initialPageParam: EVENT.LIMIT,
         // queryFn: ({ pageParam }) => handleGetEvents(pageParam),
-        queryFn: ({ pageParam }) => handleGetEvents(),
+        queryFn: () => handleGetEvents(),
         getNextPageParam: (_lastPage, _allPages, page) => {
             if (updateLimit) return limit;
 
